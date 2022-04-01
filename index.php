@@ -4,7 +4,7 @@ include_once('functions.php');
 
 echo "<html lang='pt-br'>";
 
-$dados = youtube_data("input.txt");
+$dados = youtube_data("input3.txt");
 
 var_dump($dados);
 echo "<br><br>";
