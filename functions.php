@@ -17,7 +17,7 @@ function filter_youtube_data($matches){
             if (preg_match_all("/^\d{1,2}:\d{2}:?\d{0,2}$/", $array[0]) && count($array) < 5) :
                 continue;
             elseif (count($array) == 5) :
-                $KeyArr = ['duracao', 'titulo', 'canal', 'visualizacoes', 'data-publicacao'];
+                $keyArr = ['duracao', 'titulo', 'canal', 'visualizacoes', 'data-publicacao'];
                 for ($i = 0; $i < count($array); $i++) {
                     $array[$KeyArr[$i]] = $array[$i];
                     unset($array[$i]);
