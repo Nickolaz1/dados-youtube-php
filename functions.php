@@ -34,7 +34,7 @@ function filter_youtube_data($matches){
 
 function youtube_data($arquivo){
     $file = read_file($arquivo);
-    $string = str_replace("TOCANDO AGORA", "", $file);
+    $string = trim(str_replace("TOCANDO AGORA", "", $file));
     $regex = "/.+\s*\n/";
     preg_match_all($regex, $string, $matches);
     $dados = filter_youtube_data($matches);
