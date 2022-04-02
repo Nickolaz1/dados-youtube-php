@@ -19,7 +19,7 @@ function filter_youtube_data($matches){
             elseif (count($array) == 5) :
                 $keyArr = ['duracao', 'titulo', 'canal', 'visualizacoes', 'data-publicacao'];
                 for ($i = 0; $i < count($array); $i++) {
-                    $array[$KeyArr[$i]] = $array[$i];
+                    $array[$keyArr[$i]] = $array[$i];
                     unset($array[$i]);
                 }
                 $finalArr[] = $array;
